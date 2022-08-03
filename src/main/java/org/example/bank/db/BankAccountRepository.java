@@ -15,4 +15,12 @@ public class BankAccountRepository implements Repository<BankAccount> {
     public Optional<BankAccount> findById(Long id) {
         return Optional.empty();
     }
+
+//    public UserEntity getUserByIdWithNativeQuery(Long id) {
+//        Query nativeQuery
+//                = getEntityManager().createNativeQuery("SELECT * FROM users WHERE id=:userId", UserEntity.class);
+//        nativeQuery.setParameter("userId", id);
+//        return (UserEntity) nativeQuery.getSingleResult();
+//    }
+
 }
